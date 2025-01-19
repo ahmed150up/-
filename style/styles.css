@@ -1,0 +1,284 @@
+html{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body {
+    overflow-y:unset;
+    
+    cursor: url('icons8-select-cursor-48.png'), auto;
+    
+}
+a {
+    cursor: url('icons8-hand-cursor-32.png'), pointer;
+}
+button {
+    cursor: url('icons8-hand-cursor-32.png'), pointer;
+}
+#home img {
+    border-radius: 100px; /* زوايا مدورة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل */
+    max-width: 100%; /* التأكد من أن الصورة لا تتجاوز الحجم الأصلي */
+    padding: 40px;
+}
+section {
+    padding: 150px 0;
+    
+}
+section .container{
+
+    margin-top: 100px; 
+margin-bottom: 100px;
+
+}
+#home {
+    background: linear-gradient(to right, #4facfe, #00f2fe);    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    padding: 20px 0;
+}
+.setsa{
+    background: linear-gradient(to right, #4facfe, #00f2fe);    
+    border: #4facfe;
+    border-radius: 30px;
+    
+}
+.ssest{
+    background-color: #00f2fe;
+    color: black;
+    border-radius: 30px;
+
+}
+.ssest3{
+    border-radius: 30px;
+
+}
+#navbar-button.home {
+    color: black;
+    border: 1px solid black;
+}
+.service-card {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.service-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.service-description {
+    font-size: 1rem;
+    color: #555;
+}
+.pricing-card {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.pricing-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.pricing-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pricing-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.pricing-features li {
+    margin-bottom: 10px;
+    color: #555;
+}
+.btn-primary {
+    margin-top: 20px;
+}
+.button31 {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: #4facfe solid 0.15em;
+    border-radius: 0.25em;
+    color: #4facfe;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+}
+.button31 p {
+    z-index: 1;
+}
+.button31:hover {
+    color: #212121;
+}
+.button31:active {
+    border-color: teal;
+}
+.button31::after, .button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: rgb(0, 158, 250);
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+}
+.button31::before {
+    left: 0;
+    transform: translateX(-8em);
+}
+.button31::after {
+    right: 0;
+    transform: translateX(8em);
+}
+.button31:hover:before {
+    transform: translateX(-1em);
+}
+.button31:hover:after {
+    transform: translateX(1em);
+}
+.button31:active:before,
+.button31:active:after {
+    background: teal;
+}
+.button5666 {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #4facfe;
+    border: 2px solid #007bff;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+.button5666::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #4facfe;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.button5666:hover::before {
+    scale: 3;
+}
+.button5666:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px #007bff;
+}
+.button5666:active {
+    scale: 1;
+}
+.button5221 {
+    --color: #4facfe;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+.button5221::before, .button5221::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+.button5221::before {
+    top: -1em;
+    left: -1em;
+}
+.button5221::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+.button5221:hover::before, .button5221:hover::after {
+    height: 410px;
+    width: 410px;
+}
+.button5221:hover {
+    color: rgb(10, 25, 30);
+}
+.button5221:active {
+    filter: brightness(.8);
+}
